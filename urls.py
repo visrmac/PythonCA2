@@ -62,23 +62,7 @@ urlpatterns = [
     path('customer-address', views.customer_address_view, name='customer-address'),
     path('payment-success', views.payment_success_view, name='payment-success'),
 
-    # Company paths
-    path('comp', views.comp),
-    path('show', views.show),
-    path('add_comp', views.add_comp),
-    path('edit/<str:cName>', views.edit),
-    path('update/<str:cName>', views.update),
-    path('delete/<str:cName>', views.delete),
-
-    # employee paths
-    path('emp', views.emp),
-    path('showemp', views.showemp),
-    path('deleteEmp/<str:eFname>', views.deleteEmp),
-    path('editemp/<str:eFname>', views.editemp),
-    path('updateEmp/<str:eFname>', views.updateEmp),
-
-    # inbuilt login path
-    # path('accounts/', include('django.contrib.auth.urls')),
+    
 ]
 
 if settings.DEBUG:
